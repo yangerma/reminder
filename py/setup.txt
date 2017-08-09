@@ -1,2 +1,12 @@
-$ sudo apt-get install python-pip
+Installing Pip: 
+	For Python2
+		$ sudo apt-get install python-pip
+	For Python3
+		$ sudo apt-get install python3-pip
+	Note: pip (for py2) and pip3 (for py3) are seperate.
 
+Installing Tensorflow (Ref: https://www.tensorflow.org/install/install_linux):
+	$ sudo apt-get install python-pip python-dev python-virtualenv	# for Python 2.7
+	$ virtualenv --system-site-packages [targetDir]					# for Python 2.7
+	$ source [targetDir]/bin/activate								# bash, sh, ksh, or zsh
+	([targetDir])$ pip install --upgrade tensorflow					# for Python 2.7
